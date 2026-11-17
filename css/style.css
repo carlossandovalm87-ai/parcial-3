@@ -1,0 +1,75 @@
+:root { 
+  --green-dark: #244b32; 
+  --green: #000000; 
+  --green-light: #f1f1f1; 
+  --yellow: #f25c5c; 
+  --yellow-light: #8a1f1f; 
+} 
+
+* { 
+  box-sizing: border-box; 
+} 
+
+body { 
+  min-width: 320px; 
+  margin: 0; 
+  padding: 32px 16px; 
+  color: var(--green-dark); 
+  background: var(--yellow-light); 
+  font-family: Arial, sans-serif; 
+  text-align: center; 
+} 
+
+.game { 
+  width: min(100%, 440px); 
+  margin: 0 auto; 
+  padding: 24px; 
+  background: #fffef5; 
+  border: 1px solid #c9d9ad; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+} 
+
+#dnd-name { 
+  margin: 0 0 16px; 
+  color: var(--green-dark); 
+  font-size: 30px; 
+  text-transform: capitalize; 
+} 
+
+
+#dnd-img { 
+  display: block; 
+  width: min(240px, 75vw); 
+  aspect-ratio: 1; 
+  margin: 0 auto 20px; 
+  padding: 8px; 
+  object-fit: contain; 
+  transition: transform 0.2s ease;
+} 
+
+#dnd-img:hover { 
+  transform: scale(1.04); 
+} 
+
+button { 
+  padding: 8px 16px; 
+  color: var(--green-light); 
+  background: var(--green); 
+  border: none; 
+  border-radius: 4px; 
+  font-size: 16px; 
+  cursor: pointer;
+} 
+
+@media (max-width: 420px) { 
+  body { 
+    padding: 16px 10px; 
+  } 
+  .game { 
+    padding: 18px 14px; 
+  } 
+  #dnd-name { 
+    font-size: 26px; 
+  } 
+}
